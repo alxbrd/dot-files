@@ -1,2 +1,20 @@
-[include]
-path = ~/.gitconfig.local
+[user]
+	name = alxbrd
+	email = alex+git@onboot.org
+[core]
+	autocrlf = input
+	editor = vim
+[alias]
+	l = log --graph --oneline --decorate
+	ll = log --graph --oneline --decorate --branches --tags
+	lll = log --graph --oneline --decorate --all
+[diff]
+	tool = bc3
+[difftool "bc3"]
+	trustExitCode = true
+[merge]
+	tool = bc3
+[mergetool "bc3"]
+	trustExitCode = true
+[mergetool]
+	keepBackup = false

@@ -19,6 +19,9 @@ DOT_FILES_PATH="$HOME/.dot-files"
 TMUX_CONFIG_PATH="$HOME/.tmux.conf"
 TMUX_CONFIG_SOURCE="tmux.conf"
 
+GIT_CONFIG_PATH="$HOME/.gitconfig"
+GIT_CONFIG_SOURCE="gitconfig"
+
 # Install dot-files
 if [ ! -e "$DOT_FILES_PATH" ]; then
     echo "Installing dot-files"
@@ -34,6 +37,5 @@ ensure_directory_exists $CONFIG_BACKUP_DIRECTORY
 
 # Install files
 install_file $TMUX_CONFIG_SOURCE $TMUX_CONFIG_PATH
-
-
+install_file $GIT_CONFIG_SOURCE $GIT_CONFIG_PATH
 
